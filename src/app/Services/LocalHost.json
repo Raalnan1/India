@@ -1,0 +1,26 @@
+{
+    "UserIdentity": {
+        "IsAuthenticated": false,
+        "Name": "YouTube@YubTub.club",
+        "Id": "LocalId",
+        "EmailConfirmed": false,
+        "PhoneNumber": null,
+        "UserName": "Raalnan5@GMail.com"
+    },
+    "YouTubeVideos": [{
+        "Title": "White Belt Angular A: Creating a new project, Installing Material, and adding Material Navigation.",
+        "VideoId": "zcxAdmTVv5s"
+    }, {
+        "Title": "White Belt Angular B: Adding Routes and Router Links.",
+        "VideoId": "Qjr_cTAoDP8"
+    }, {
+        "Title": "White Belt Angular C: Channel Awareness",
+        "VideoId": "Gdlrzx2FQHM"
+    }, {
+        "Title": "White Belt Angular E: Add a YouTube Video Player to a page component",
+        "VideoId": "nBw_WvTFV2w"
+    }, {
+        "Title": "White Belt Angular F: Set up and usage of json server in Angular",
+        "VideoId": "ZheyagIp9w4"
+    }]
+}

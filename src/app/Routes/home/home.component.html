@@ -1,0 +1,143 @@
+<h2>Home</h2>
+<h3>Commands</h3>
+<dl>
+    <dt>ng add @angular/material</dt>
+    <dt>npm install -g @angular/common</dt>
+    <dt>npm install -g @angular/core</dt>
+    <dt>npm install -g json-server</dt>
+    <dt>ng generate @angular/material:navigation Navigation</dt>
+    <dt>ng generate component Routes/Home</dt>
+    <dt>ng generate component Routes/LinkShare</dt>
+    <dt>ng generate component Routes/Videos</dt>
+    <dt>ng generate module Modules/Channel</dt>
+    <dd>
+        In navigation.component.ts:
+        <code>
+      this.CurrentChannel = channelModule.getChannel();
+    </code> Doing this will generate two errors:
+        <ol>
+            <li>We have to add the ChannelModule as an import in navigation.component.spec.ts
+                <ol>
+                    <li>
+                        <img src="assets/Error1/Image1.JPG" width="50%">
+                    </li>
+                    <li>
+                        <img src="assets/Error1/Image2.JPG" width="50%">
+                    </li>
+                    <li>
+                        <img src="assets/Error1/Image3.JPG" width="50%">
+                    </li>
+                </ol>
+            </li>
+            <li>We have to add the ChannelModule as an import in app.module.ts
+                <ol>
+                    <li>
+                        <img src="assets/Error2/Capture1.JPG" width="50%">
+                    </li>
+                    <li>
+                        <img src="assets/Error2/Capture2.JPG" width="50%">
+                    </li>
+                    <li>
+                        <img src="assets/Error2/Capture3.JPG" width="50%">
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </dd>
+    <dt>XCopy "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Charlie\*.*"
+    "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Delta\" /C /D /S /Y</dt>
+
+    <dt>
+    json-server --watch C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Delta\src\app\Services\LocalHost.json
+  </dt>
+    <dt>Create and connect to the API Service.</dt>
+    <dd>
+        <ol>
+            <li>ng generate service Services/API</li>
+            <li>Add "private http: HttpClient" to the constructor.</li>
+            <li>Copy the UserIdentktyModel.ts and YouTubeVideoModel.ts files into the Models directory.</li>
+            <li>Add the "getUserIdentity" method to api.service.ts.</li>
+            <li>
+                Add the code in app.component.ts to call and subscribe to the "getUserIdentity" method in api.service.ts.
+            </li>
+            <li>
+                In app.module.ts, add HttpClientModule as an import, and APIService as a provider.
+            </li>
+            <li>Note the fact that the addition of the http call causes an error in Karma.</li>
+        </ol>
+    </dd>
+    <dt>
+    Create the Echo Project.
+  </dt>
+    <dd>
+        <div>del "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Echo"</div>
+        <div>del "D:\Users\Raaln_g0ezb\source\repos\AngularDemo\Echo"</div>
+        <div>XCopy "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Delta\*.*" "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Echo\" /C /D /S /Y</div>
+        <div>XCopy "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Delta\*.*" "D:\Users\Raaln_g0ezb\source\repos\AngularDemo\Echo\" /C /D /S /Y</div>
+    </dd>
+
+    <dt>Getting Karma to work with APIs</dt>
+    <dd>
+        I don't have a good grasp of how this works, but I do have screenshots of what I have done to get it working.
+        <ol>
+            <li>
+                <a target="_blank" href="assets/Error4/Capture1.JPGKs">
+                    <img width="75%" src="assets/Error4/Capture1.JPG">
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="assets/Error4/Capture2.JPGKs">
+                    <img width="75%" src="assets/Error4/Capture2.JPG">
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="assets/Error4/Capture3.JPGKs">
+                    <img width="75%" src="assets/Error4/Capture3.JPG">
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="assets/Error4/Capture4.JPGKs">
+                    <img width="75%" src="assets/Error4/Capture4.JPG">
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="assets/Error4/Capture5.JPGKs">
+                    <img width="75%" src="assets/Error4/Capture5.JPG">
+                </a>
+            </li>
+        </ol>
+    </dd>
+
+    <dt>
+    Create the Golf Project.
+  </dt>
+    <dd>
+        <div>XCopy "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\FoxTrot\*.*" "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Golf\" /C /D /S /Y</div>
+        <div>XCopy "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\FoxTrot\*.*" "D:\Users\Raaln_g0ezb\source\repos\AngularDemo\Golf\" /C /D /S /Y</div>
+    </dd>
+
+    <dt>
+    Golf
+  </dt>
+    <dd>
+        <ol>
+            <li><a target="_blank" href="assets/Golf/api.service.txt">api.service.txt</a></li>
+            <li><a target="_blank" href="assets/Golf/app.component.txt">app.component.txt</a></li>
+            <li><a target="_blank" href="assets/Golf/navigation.component.txt">navigation.component.txt</a></li>
+            <li><a target="_blank" href="assets/Golf/UserIdentityModel.txt">UserIdentityModel.txt</a></li>
+        </ol>
+    </dd>
+
+    <dt>
+        Create the Hotel Project.
+      </dt>
+    <dd>
+        <div>XCopy "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Golf\*.*" "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Hotel\" /C /D /S /Y</div>
+        <div>XCopy "C:\Users\Raaln_g0ezb\source\repos\AngularDemo\Golf\*.*" "D:\Users\Raaln_g0ezb\source\repos\AngularDemo\Hotel\" /C /D /S /Y</div>
+    </dd>
+
+</dl>
